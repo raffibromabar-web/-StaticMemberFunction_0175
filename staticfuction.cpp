@@ -36,3 +36,20 @@ void Mahasiswa::printAll(){
     cout << "Nama = " << nama << endl;
     cout << endl;
 }
+
+int main(){
+    Mahasiswa mhs1("Walek Sri");
+    Mahasiswa mhs2("Budi ko");
+    Mahasiswa::setNim(9);
+    Mahasiswa mhs3("Andi J");
+    Mahasiswa mhs4("Joko Kendil");
+
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    cout << "Akses dari luar objek = " << Mahasiswa::getnim() << endl;
+    system("pause");
+    return 0;
+}
